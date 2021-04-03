@@ -3,7 +3,7 @@
               <div class="card-header">
               <div class="row">
                   <div class="col-sm">
-                    <p><strong>Drug Name: </strong></p> <?php echo $presc["name"]; ?>
+                    <?php echo $presc["name"]; ?>
                      <!-- else -->
                   </div>
                   <div class="col-sm">
