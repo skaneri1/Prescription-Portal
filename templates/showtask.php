@@ -24,13 +24,6 @@
                 </div> <!-- Body -->
                 <div class="card-footer">
                   <div class = "row">
-                      <div class = "col-sm">
-                          <ul class="nav justify-content-end nav-pills card-header-pills">
-                              <li class="nav-item">
-                                  <a class="nav-link" href="/deletetask.php?id=<?php echo $presc["id"] ?>"> <i class="fas fa-trash-alt"></i></a>
-                              </li>
-                          </ul>
-                      </div>
                   </div>
               </div>
             </div> <!-- Card -->
