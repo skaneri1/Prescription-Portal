@@ -5,7 +5,7 @@
 
 		$connection = new PDO($dsn, $username, $password, $options);
 
-		$sql = "SELECT * FROM tasks";
+		$sql = "SELECT * FROM presc";
 
 		$statement = $connection->prepare($sql);
 		$statement->execute();
@@ -25,7 +25,7 @@
          require("./templates/nav.php");
          if (!$result && $statement->rowCount() == 0) { ?>
           <h4> No prescriptions to display. Add one from the patients.</h4>
-         <?php } 
+         <?php }
          else
          {
             foreach ($result as $task) {
