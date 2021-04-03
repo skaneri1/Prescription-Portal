@@ -5,7 +5,7 @@
         try {
         $connection = new PDO($dsn, $username, $password, $options);
 
-        $new_presc = array(
+        $new_pres = array(
             "name"       => escape($_POST['name']),
             "freq"       => escape($_POST['freq']),
             "instruc"      => escape($_POST['instruc']),
@@ -14,17 +14,17 @@
         );
 
         if ($_POST['lastfill']) {
-            $new_presc+= ["lastfill" => escape($_POST['lastfill'])];
+            $new_pres+= ["lastfill" => escape($_POST['lastfill'])];
         }
 
         $sql = sprintf(
             "INSERT INTO %s (%s) values (%s)",
             "presc",
-            implode(", ", array_keys($new_presc)),
-            ":" . implode(", :", array_keys($new_presc)));
+            implode(", ", array_keys($new_pres)),
+            ":" . implode(", :", array_keys($new_pres)));
 
         $statement = $connection->prepare($sql);
-        $statement->execute($new_presc);
+        $statement->execute($new_pres);
 
         header ("location: /index.php");
         }
