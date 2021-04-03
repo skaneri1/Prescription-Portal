@@ -28,7 +28,7 @@
          <?php }
          else
          {
-            foreach ($result as $task) {
+            foreach ($result as $presc) {
               require("./templates/showtask.php");
              } // <!-- foreach -->
           } ?> <!-- else -->
