@@ -3,6 +3,7 @@
               <div class="card-header">
               <div class="row">
                   <div class="col-sm">
+                    <p><strong>Drug Name: </strong></p>
                     <?php echo $presc["name"]; ?> <!-- else -->
                   </div>
                   <div class="col-sm">
@@ -19,8 +20,8 @@
                 </div> <!-- Row #1 -->
                 </div> <!-- Header -->
                 <div class="card-body">
-                  <p class ="card-title"><em>Frequency: </em><?php echo $presc["freq"]; ?></p>
-                  <p class="card-text"><em>Instructions: </em><?php echo $presc["instruc"]; ?></p>
+                  <p class ="card-title"><strong>Frequency: </strong><?php echo $presc["freq"]; ?></p>
+                  <p class="card-text"><strong>Instructions: </strong><?php echo $presc["instruc"]; ?></p>
                 </div> <!-- Body -->
                 <div class="card-footer">
                   <div class = "row">
