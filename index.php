@@ -1,5 +1,5 @@
 <?php
-	try {	
+	try {
 		require "../configs/config.php";
 		require "./common.php";
 
@@ -10,7 +10,7 @@
 		$statement = $connection->prepare($sql);
 		$statement->execute();
 
-        $result = $statement->fetchAll();	
+        $result = $statement->fetchAll();
 
 	} catch(PDOException $error) {
 		echo $sql . "<br>" . $error->getMessage();
@@ -21,18 +21,18 @@
 <?php require("./templates/header.php"); ?>
 
     <div class="container">
-      <?php 
+      <?php
          require("./templates/nav.php");
          if (!$result && $statement->rowCount() == 0) { ?>
-          <h4> No tasks to display. Add one above.</h4>
+          <h4> No prescriptions to display. Add one from the patients.</h4>
          <?php } 
-         else 
-         { 
-            foreach ($result as $task) { 
+         else
+         {
+            foreach ($result as $task) {
               require("./templates/showtask.php");
-             } // <!-- foreach --> 
+             } // <!-- foreach -->
           } ?> <!-- else -->
-      
+
     </div> <!-- container -->
 
     <?php require("./templates/footer.php"); ?>
