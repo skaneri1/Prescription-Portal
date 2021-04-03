@@ -12,7 +12,7 @@
                 <input class="form-control" id="name" name="name">
 
                 <label for="freq" class="text-primary">Frequency</label>
-                <textarea class="form-control" id="freq" rows="3" name="freq"></textarea>
+                <textarea class="form-control" id="freq" name="freq"></textarea>
 
                 <label for="instruc" class="text-primary">Instructions</label>
                 <textarea class="form-control" id="instruc" rows="3" name="instruc"></textarea>
