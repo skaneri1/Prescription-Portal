@@ -14,8 +14,9 @@
 
         if ($statement1->rowCount() > 0){
             header('Refresh:5; url=index.php');
-            echo "<h2 style='padding-left: 20px; padding-top: 20px'>".'Error 404: This prescription already exists for this patient.'."</h2>";
-            echo "<h2 style='padding-left: 20px; padding-top: 20px'>".'This page will redirect back to patients in 5 seconds.'."</h2>";
+            echo "<h2 style='padding-left: 30px; padding-top: 30px'>".'Error 404: This prescription already exists for Dhruv.'."</h2>";
+            echo "<h5 style='padding-left: 30px; padding-top: 10px'>".'Try entering a different prescription from the patient portal'."</h5>";
+            echo "<h2 style='padding-left: 30px; padding-top: 10px'>".'This page will redirect back to patients in 5 seconds.'."</h2>";
             exit();
         }
 
@@ -43,9 +44,9 @@
 
 
         header('Refresh:5; url=index.php');
-        echo "<h2 style='padding-left: 20px; padding-top: 20px'>".'Congratulations! The Prescription has
-        been saved!'."</h2>";
-        echo "<h2 style='padding-left: 20px; padding-top: 20px'>".'This page will redirect back to patients in 5 seconds.'."</h2>";
+        echo "<h2 style='padding-left: 30px; padding-top: 30px'>".'Congratulations! The Prescription has been saved!'."</h2>";
+        echo "<h5 style='padding-left: 30px; padding-top: 10px'>".'You can view this submission for Dhruv in the Prescriptions tab'."</h5>";
+        echo "<h2 style='padding-left: 30px; padding-top: 10px'>".'This page will redirect back to patients in 5 seconds.'."</h2>";
         }
 
         catch(PDOException $error) {
