@@ -21,7 +21,7 @@
 
 		$sqlb = "SELECT * FROM hari";
 
-		$statementb = $connection->prepare($sql);
+		$statementb = $connection->prepare($sqlb);
 		$statementb->execute();
 
         $resultb = $statementb->fetchAll();
