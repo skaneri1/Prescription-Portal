@@ -55,7 +55,7 @@
 
 		<h2 style="padding-bottom: 30px; padding-top: 30px;">Dhruv's Prescriptions</h2>
 		<?php
-			 if (!$result && $statement->rowCount() == 0) { ?>
+			 if (!$resultd && $statement->rowCount() == 0) { ?>
 				<h4> No prescriptions to display. Add one from the patients.</h4>
 			 <?php }
 			 else
