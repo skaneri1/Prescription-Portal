@@ -22,7 +22,8 @@
 
 		<div class="container">
 		<?php require "./templates/nav.php" ?>
-		<h1>Patients Registered with Portal</h1>
+		<h2>Patients Registered with Portal</h2>
+		<br>
 		<h4>Shlok Kaneria</h4>
 		<!-- Trigger the modal with a button -->
 		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Prescription</button>
@@ -65,7 +66,7 @@
 		</div>
 		</div>
 
-
+		<br>
 		<h4>Dhruv Parthasarathy</h4>
 		<!-- Trigger the modal with a button -->
 		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Prescription</button>
@@ -108,7 +109,7 @@
 		</div>
 		</div>
 
-
+		<br>
 		<h4>Hari Dhanushkodi</h4>
 		<!-- Trigger the modal with a button -->
 		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Prescription</button>
