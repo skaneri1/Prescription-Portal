@@ -66,7 +66,7 @@
 		</div>
 		</div>
 
-		<h4 style="padding-top: 30px">Antoinette Cruz</h4>
+		<h4 style="padding-top: 30px">Dhruv Parthasarathy</h4>
 		<!-- Trigger the modal with a button -->
 		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Prescription</button>
 
@@ -108,7 +108,7 @@
 		</div>
 		</div>
 
-		<h4 style="padding-top: 30px">Shrey</h4>
+		<h4 style="padding-top: 30px">Hari Dhanushkodi</h4>
 		<!-- Trigger the modal with a button -->
 		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Prescription</button>
 
