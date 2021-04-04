@@ -33,11 +33,11 @@
 			<!-- Modal content-->
 			<div class="modal-content">
 				<div class="modal-header">
+					<h2 class="modal-title">Modal Header</h2>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h2 class="modal-title">Modal Header</h4>
 				</div>
 				<div class="modal-body">
-					<div class="card" style="width: 50%">
+					<div class="card">
 	        <form method="post" style="padding: 20px" action="./performadd.php">
 	            <div class="form-group">
 	                <label for="name" class="text-primary">Drug Name</label>
