@@ -12,16 +12,18 @@
 
         $result = $statement->fetchAll();
 
+		$connectiona = new PDO($dsn, $username, $password, $options);
 		$sqla = "SELECT * FROM presc.dhruv";
 
-		$statementa = $connection->prepare($sqla);
+		$statementa = $connectiona->prepare($sqla);
 		$statementa->execute();
 
         $resulta = $statementa->fetchAll();
 
+		$connectionb = new PDO($dsn, $username, $password, $options);
 		$sqlb = "SELECT * FROM presc.hari";
 
-		$statementb = $connection->prepare($sqlb);
+		$statementb = $connectionb->prepare($sqlb);
 		$statementb->execute();
 
         $resultb = $statementb->fetchAll();
