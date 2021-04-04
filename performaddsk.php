@@ -16,7 +16,7 @@
                 $new_pres+= ["lastfill" => escape($_POST['lastfill'])];
             }
 
-            $sql1 = "SELECT * FROM shlok WHERE name = $_POST['name']";
+            $sql1 = "SELECT * FROM shlok WHERE name = '$_POST['name']'";
 
             $statement1 = $connection->prepare($sql1);
             $statement1->execute();
@@ -41,8 +41,6 @@
             echo "<h2 style='padding-left: 20px; padding-top: 20px'>".'Congratulations! The Prescription has
             been saved!'."</h2>";
             echo "<h2 style='padding-left: 20px; padding-top: 20px'>".'This page will redirect back to patients in 5 seconds.'."</h2>";
-            exit();
-          }
         }
 
         catch(PDOException $error) {
