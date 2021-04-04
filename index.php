@@ -23,7 +23,7 @@
 		<div class="container">
 		<?php require "./templates/nav.php" ?>
 		<h2>Patients Registered with Portal</h2>
-		<br>
+		<div></div>
 		<h4>Shlok Kaneria</h4>
 		<!-- Trigger the modal with a button -->
 		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Prescription</button>
@@ -35,7 +35,7 @@
 			<!-- Modal content-->
 			<div class="modal-content">
 				<div class="modal-header">
-					<h2 class="modal-title">Shlok's Prescription</h2>
+					<h2 class="modal-title">Fill Prescription</h2>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 				</div>
 				<div class="modal-body">
@@ -66,19 +66,19 @@
 		</div>
 		</div>
 
-		<br>
+		<div></div>
 		<h4>Dhruv Parthasarathy</h4>
 		<!-- Trigger the modal with a button -->
 		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Prescription</button>
 
 		<!-- Modal -->
-		<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal fade" id="myModal1" role="dialog">
 		<div class="modal-dialog">
 
 			<!-- Modal content-->
 			<div class="modal-content">
 				<div class="modal-header">
-					<h2 class="modal-title">Dhruv's Prescription</h2>
+					<h2 class="modal-title">Fill Prescription</h2>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 				</div>
 				<div class="modal-body">
@@ -109,19 +109,19 @@
 		</div>
 		</div>
 
-		<br>
+		<div></div>
 		<h4>Hari Dhanushkodi</h4>
 		<!-- Trigger the modal with a button -->
 		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Prescription</button>
 
 		<!-- Modal -->
-		<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal fade" id="myModal2" role="dialog">
 		<div class="modal-dialog">
 
 			<!-- Modal content-->
 			<div class="modal-content">
 				<div class="modal-header">
-					<h2 class="modal-title">Hari's Prescription</h2>
+					<h2 class="modal-title">Fill Prescription</h2>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 				</div>
 				<div class="modal-body">
