@@ -26,6 +26,10 @@
         $statement = $connection->prepare($sql);
         $statement->execute($new_pres);
 
+        if ($_POST['submit']) {
+            $success = "Congratulations, prescription saved!";
+        }
+
         header ("location: /index.php");
         }
 
