@@ -15,22 +15,33 @@
         if ($_POST['lastfill']) {
             $new_pres+= ["lastfill" => escape($_POST['lastfill'])];
         }
-        //If entry exists in shlok...header('Refresh:5; url=index.php');...echo 404 error and say record exists
 
-        //else...do all the rest
-        $sql = sprintf(
-            "INSERT INTO %s (%s) values (%s)",
-            "shlok",
-            implode(", ", array_keys($new_pres)),
-            ":" . implode(", :", array_keys($new_pres)));
+        $sql1 = "SELECT name from shlok where name = ':dbname'";
 
-        $statement = $connection->prepare($sql);
-        $statement->execute($new_pres);
+        $statement1 = $connection->prepare($sql1);
+        $statement1->bindParam(":dbname", "name");
+        $statement1->execute();
 
-        header('Refresh:5; url=index.php');
-        echo "<h2 style='padding-left: 20px; padding-top: 20px'>".'Congratulations! The Prescription has
-        been saved!'."</h2>";
-        echo "<h2 style='padding-left: 20px; padding-top: 20px'>".'This page will redirect back to patients in 5 seconds.'."</h2>";
+        if($stmt->rowCount() > 0){
+            header('Refresh:5; url=index.php');
+            echo "<h2 style='padding-left: 20px; padding-top: 20px'>".'Error 404: This prescription already exists for this patient.'."</h2>";
+            echo "<h2 style='padding-left: 20px; padding-top: 20px'>".'This page will redirect back to patients in 5 seconds.'."</h2>";
+          }
+        else{
+            $sql = sprintf(
+                "INSERT INTO %s (%s) values (%s)",
+                "shlok",
+                implode(", ", array_keys($new_pres)),
+                ":" . implode(", :", array_keys($new_pres)));
+
+            $statement = $connection->prepare($sql);
+            $statement->execute($new_pres);
+
+            header('Refresh:5; url=index.php');
+            echo "<h2 style='padding-left: 20px; padding-top: 20px'>".'Congratulations! The Prescription has
+            been saved!'."</h2>";
+            echo "<h2 style='padding-left: 20px; padding-top: 20px'>".'This page will redirect back to patients in 5 seconds.'."</h2>";
+          }
         }
 
         catch(PDOException $error) {
