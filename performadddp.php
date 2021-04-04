@@ -19,9 +19,10 @@
 
         //else...do all the rest
         $sql = sprintf(
-            "INSERT INTO 'dhruv'(%s) values (%s)",
-            implode(", ", array_keys($new_pres)),
-            ":" . implode(", :", array_keys($new_pres)));
+          "INSERT INTO %s (%s) values (%s)",
+          "dhruv",
+          implode(", ", array_keys($new_pres)),
+          ":" . implode(", :", array_keys($new_pres)));
 
         $statement = $connection->prepare($sql);
         $statement->execute($new_pres);
