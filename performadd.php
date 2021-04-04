@@ -27,7 +27,8 @@
         $statement->execute($new_pres);
 
         header('Refresh:5; url=index.php');
-        echo 'Congratulations! The Prescription has been saved...This page will redirect to patients in 5 seconds';
+        echo "<h2 style='padding-left: 20px; padding-top: 20px'>".'Congratulations! The Prescription has 
+        been saved...This page will redirect to patients in 5 seconds'."</h2>";
         }
 
         catch(PDOException $error) {
