@@ -5,7 +5,7 @@
 
 		$connection = new PDO($dsn, $username, $password, $options);
 
-		$sql = "SELECT * FROM presc.shlok";
+		$sql = "SELECT * FROM shlok";
 
 		$statement = $connection->prepare($sql);
 		$statement->execute();
@@ -13,7 +13,7 @@
         $result = $statement->fetchAll();
 
 		$connectiona = new PDO($dsn, $username, $password, $options);
-		$sqla = "SELECT * FROM presc.dhruv";
+		$sqla = "SELECT * FROM dhruv";
 
 		$statementa = $connectiona->prepare($sqla);
 		$statementa->execute();
@@ -21,7 +21,7 @@
         $resulta = $statementa->fetchAll();
 
 		$connectionb = new PDO($dsn, $username, $password, $options);
-		$sqlb = "SELECT * FROM presc.hari";
+		$sqlb = "SELECT * FROM hari";
 
 		$statementb = $connectionb->prepare($sqlb);
 		$statementb->execute();
