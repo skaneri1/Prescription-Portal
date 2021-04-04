@@ -20,7 +20,7 @@
         //else...do all the rest
         $sql = sprintf(
             "INSERT INTO %s (%s) values (%s)",
-            "shlok",
+            "presc.shlok",
             implode(", ", array_keys($new_pres)),
             ":" . implode(", :", array_keys($new_pres)));
 
