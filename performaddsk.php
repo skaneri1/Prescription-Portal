@@ -22,7 +22,7 @@
         $statement1->bindParam(":dbname", "name");
         $statement1->execute();
 
-        if($stmt->rowCount() > 0){
+        if($statement1->rowCount() > 0){
             header('Refresh:5; url=index.php');
             echo "<h2 style='padding-left: 20px; padding-top: 20px'>".'Error 404: This prescription already exists for this patient.'."</h2>";
             echo "<h2 style='padding-left: 20px; padding-top: 20px'>".'This page will redirect back to patients in 5 seconds.'."</h2>";
