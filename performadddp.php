@@ -5,6 +5,20 @@
         try {
         $connection = new PDO($dsn, $username, $password, $options);
 
+        $tempname = $_POST['name'];
+
+        $sql1 = "SELECT * FROM dhruv WHERE name = '$tempname'";
+
+        $statement1 = $connection->prepare($sql1);
+        $statement1->execute();
+
+        if ($statement1->rowCount() > 0){
+            header('Refresh:5; url=index.php');
+            echo "<h2 style='padding-left: 20px; padding-top: 20px'>".'Error 404: This prescription already exists for this patient.'."</h2>";
+            echo "<h2 style='padding-left: 20px; padding-top: 20px'>".'This page will redirect back to patients in 5 seconds.'."</h2>";
+            exit();
+        }
+
         $new_pres = array(
             "name"       => escape($_POST['name']),
             "freq"       => escape($_POST['freq']),
