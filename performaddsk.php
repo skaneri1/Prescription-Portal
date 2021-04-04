@@ -12,22 +12,6 @@
                 "filled"    => escape($_POST['filled'])
             );
 
-            if ($_POST['lastfill']) {
-                $new_pres+= ["lastfill" => escape($_POST['lastfill'])];
-            }
-
-            $sql1 = "SELECT * FROM shlok WHERE name = '$_POST['name']'";
-
-            $statement1 = $connection->prepare($sql1);
-            $statement1->execute();
-
-            if ($statement1->rowCount() > 0){
-                header('Refresh:5; url=index.php');
-                echo "<h2 style='padding-left: 20px; padding-top: 20px'>".'Error 404: This prescription already exists for this patient.'."</h2>";
-                echo "<h2 style='padding-left: 20px; padding-top: 20px'>".'This page will redirect back to patients in 5 seconds.'."</h2>";
-                exit();
-            }
-
             $sql = sprintf(
                 "INSERT INTO %s (%s) values (%s)",
                 "shlok",
