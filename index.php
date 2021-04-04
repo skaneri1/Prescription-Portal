@@ -48,10 +48,10 @@
 
 		<h4 style="padding-top: 30px">Parthasarathy, Dhruv</h4>
 		<!-- Trigger the modal with a button -->
-		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Prescription</button>
+		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">Add Prescription</button>
 
 		<!-- Modal -->
-		<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal fade" id="myModal1" role="dialog">
 		<div class="modal-dialog">
 
 			<!-- Modal content-->
@@ -90,10 +90,10 @@
 
 		<h4 style="padding-top: 30px">Dhanushkodi, Hari</h4>
 		<!-- Trigger the modal with a button -->
-		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Prescription</button>
+		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Add Prescription</button>
 
 		<!-- Modal -->
-		<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal fade" id="myModal2" role="dialog">
 		<div class="modal-dialog">
 
 			<!-- Modal content-->
