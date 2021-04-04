@@ -36,4 +36,38 @@
 
     </div> <!-- container -->
 
+		<?php
+			try {
+				require "../configs/config.php";
+				require "./common.php";
+
+				$connection = new PDO($dsn, $username, $password, $options);
+
+				$sql = "SELECT * FROM presc.dhruv";
+
+				$statement = $connection->prepare($sql);
+				$statement->execute();
+
+		        $resultd = $statement->fetchAll();
+
+			} catch(PDOException $error) {
+				echo $sql . "<br>" . $error->getMessage();
+			}
+		?>
+
+		<div class="container">
+		<h2 style="padding-bottom: 30px">Dhruv's Prescriptions</h2>
+		<?php
+			 if (!$result && $statement->rowCount() == 0) { ?>
+				<h4> No prescriptions to display. Add one from the patients.</h4>
+			 <?php }
+			 else
+			 {
+					foreach ($resultd as $presc) {
+						require("./templates/showtask.php");
+					 } // <!-- foreach -->
+				} ?> <!-- else -->
+
+		</div>
+
     <?php require("./templates/footer.php"); ?>
