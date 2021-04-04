@@ -26,8 +26,6 @@
         $statement = $connection->prepare($sql);
         $statement->execute($new_pres);
 
-        echo "Your prescription is saved successfully!";
-
         header ("location: /index.php");
         }
 
