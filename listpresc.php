@@ -1,6 +1,21 @@
-<?php require("./templates/header.php"); ?>
-<?php require("./common.php"); ?>
-<?php require("../configs/config.php"); ?>
+<?php
+	try {
+		require "../configs/config.php";
+		require "./common.php";
+
+		$connection = new PDO($dsn, $username, $password, $options);
+
+		$sql = "SELECT * FROM presc";
+
+		$statement = $connection->prepare($sql);
+		$statement->execute();
+
+        $result = $statement->fetchAll();
+
+	} catch(PDOException $error) {
+		echo $sql . "<br>" . $error->getMessage();
+	}
+?>
 
 
 <?php require("./templates/header.php"); ?>
@@ -13,7 +28,7 @@
          <?php }
          else
          {
-            foreach ($result as $task) {
+            foreach ($result as $presc) {
               require("./templates/showtask.php");
              } // <!-- foreach -->
           } ?> <!-- else -->
