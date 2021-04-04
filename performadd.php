@@ -26,9 +26,7 @@
         $statement = $connection->prepare($sql);
         $statement->execute($new_pres);
 
-        if ($_POST['submit']) {
-            $success = "Congratulations, prescription saved!";
-        }
+        echo "Your prescription is saved successfully!";
 
         header ("location: /index.php");
         }
