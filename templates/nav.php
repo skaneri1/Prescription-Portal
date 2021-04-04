@@ -3,7 +3,7 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
         <a class="nav-item nav-link active" href="/">Patients</a>
-        <a class="nav-item nav-link active" href="/addtask.php">Prescriptions</a>
+        <a class="nav-item nav-link active" href="/listpresc.php">Prescriptions</a>
         </div>
     </div>
 </nav>
