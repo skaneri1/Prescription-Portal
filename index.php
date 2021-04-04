@@ -10,7 +10,7 @@
 		$statement = $connection->prepare($sql);
 		$statement->execute();
 
-        $result = <div class="alert alert-success">Thank You! I will be in touch</div>;
+        $result = $statement->fetchAll();
 
 	} catch(PDOException $error) {
 		echo $sql . "<br>" . $error->getMessage();
@@ -60,7 +60,6 @@
 	                <input type="date" class="form-control" id="lastfill" name="lastfill">
 	            </div>
 	                <input  type="submit" class="btn btn-primary" name="submit" value="Add Prescription">
-									<?php echo $result; ?>
 	        </form>
 	      </div>
 			</div>
