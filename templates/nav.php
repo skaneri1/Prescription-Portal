@@ -3,7 +3,9 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
         <a class="nav-item nav-link active" href="/">Patients</a>
-        <a class="nav-item nav-link active" href="/listpresc.php">Prescriptions</a>
+        <a class="nav-item nav-link active" href="/listpresc.php">Shlok's Prescriptions</a>
+        <a class="nav-item nav-link active" href="/listpresc1.php">Dhruv's Prescriptions</a>
+        <a class="nav-item nav-link active" href="/listpresc2.php">Hari's Prescriptions</a>
         </div>
     </div>
 </nav>
