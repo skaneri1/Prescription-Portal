@@ -25,6 +25,7 @@
             header('Refresh:5; url=index.php');
             echo "<h2 style='padding-left: 20px; padding-top: 20px'>".'Error 404: This prescription already exists for this patient.'."</h2>";
             echo "<h2 style='padding-left: 20px; padding-top: 20px'>".'This page will redirect back to patients in 5 seconds.'."</h2>";
+            exit();
           }
         else{
             $sql = sprintf(
@@ -40,6 +41,7 @@
             echo "<h2 style='padding-left: 20px; padding-top: 20px'>".'Congratulations! The Prescription has
             been saved!'."</h2>";
             echo "<h2 style='padding-left: 20px; padding-top: 20px'>".'This page will redirect back to patients in 5 seconds.'."</h2>";
+            exit();
           }
         }
 
