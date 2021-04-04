@@ -27,15 +27,6 @@
         $statement = $connection->prepare($sql);
         $statement->execute($new_pres);
 
-        $sql = sprintf(
-            "INSERT INTO %s (%s) values (%s)",
-            "presc",
-            implode(", ", array_keys($new_pres)),
-            ":" . implode(", :", array_keys($new_pres)));
-
-        $statement = $connection->prepare($sql);
-        $statement->execute($new_pres);
-
         header('Refresh:5; url=index.php');
         echo "<h2 style='padding-left: 20px; padding-top: 20px'>".'Congratulations! The Prescription has
         been saved!'."</h2>";
