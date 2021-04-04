@@ -19,9 +19,17 @@
 
         $resulta = $statementa->fetchAll();
 
+		$sqlb = "SELECT * FROM presc.hari";
+
+		$statementb = $connection->prepare($sqlb);
+		$statementb->execute();
+
+        $resultb = $statementb->fetchAll();
+
 	} catch(PDOException $error) {
 		echo $sql . "<br>" . $error->getMessage();
 		echo $sqla . "<br>" . $error->getMessage();
+		echo $sqlb . "<br>" . $error->getMessage();
 	}
 ?>
 
@@ -50,6 +58,18 @@
          else
          {
             foreach ($resulta as $presc) {
+              require("./templates/showtask.php");
+             } // <!-- foreach -->
+          } ?> <!-- else -->
+
+			<h2 style="padding-bottom: 30px; padding-top: 30px">Hari's Prescriptions</h2>
+      <?php
+         if (!$resultb && $statementb->rowCount() == 0) { ?>
+          <h4> No prescriptions to display. Add one from the patients.</h4>
+         <?php }
+         else
+         {
+            foreach ($resultb as $presc) {
               require("./templates/showtask.php");
              } // <!-- foreach -->
           } ?> <!-- else -->
