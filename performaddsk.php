@@ -7,7 +7,7 @@
 
             $tempname = $_POST['name'];
 
-            $sql1 = "SELECT * FROM 'shlok' WHERE 'name' = '$tempname'";
+            $sql1 = "SELECT * FROM shlok WHERE name = '$tempname'";
 
             $statement1 = $connection->prepare($sql1);
             $statement1->execute();
