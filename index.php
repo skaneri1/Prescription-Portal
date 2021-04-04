@@ -4,7 +4,7 @@
 		<?php require "./templates/nav.php" ?>
 		<h2 style="padding-bottom: 30px">Patients Registered with Portal</h2>
 
-		<h4>Shlok Kaneria</h4>
+		<h4>Kaneria, Shlok</h4>
 		<!-- Trigger the modal with a button -->
 		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Prescription</button>
 
@@ -46,7 +46,7 @@
 		</div>
 		</div>
 
-		<h4 style="padding-top: 30px">Dhruv Parthasarathy</h4>
+		<h4 style="padding-top: 30px">Parthasarathy, Dhruv</h4>
 		<!-- Trigger the modal with a button -->
 		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Prescription</button>
 
@@ -88,7 +88,7 @@
 		</div>
 		</div>
 
-		<h4 style="padding-top: 30px">Hari Dhanushkodi</h4>
+		<h4 style="padding-top: 30px">Dhanushkodi, Hari</h4>
 		<!-- Trigger the modal with a button -->
 		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Prescription</button>
 
