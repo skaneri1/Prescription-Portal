@@ -5,7 +5,7 @@
 
 		$connection = new PDO($dsn, $username, $password, $options);
 
-		$sql = "SELECT * FROM presc";
+		$sql = "SELECT * FROM presc.shlok";
 
 		$statement = $connection->prepare($sql);
 		$statement->execute();
@@ -21,8 +21,9 @@
 <?php require("./templates/header.php"); ?>
 
     <div class="container">
+			<?php require "./templates/nav.php" ?>
+			<h2 style="padding-bottom: 30px">Shlok's Prescriptions</h2>
       <?php
-         require("./templates/nav.php");
          if (!$result && $statement->rowCount() == 0) { ?>
           <h4> No prescriptions to display. Add one from the patients.</h4>
          <?php }
