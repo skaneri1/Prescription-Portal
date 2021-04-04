@@ -5,7 +5,7 @@
 
 		$connection = new PDO($dsn, $username, $password, $options);
 
-		$sql = "SELECT * FROM prec.shlok";
+		$sql = "SELECT * FROM presc.shlok";
 
 		$statement = $connection->prepare($sql);
 		$statement->execute();
