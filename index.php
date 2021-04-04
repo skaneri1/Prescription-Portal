@@ -39,7 +39,7 @@
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 				</div>
 				<div class="modal-body">
-	        <form method="post" style="padding: 10px" action="./performadd.php">
+	        <form method="post" style="padding: 10px" action="./performaddsk.php">
 	            <div class="form-group">
 	                <label for="name" class="text-primary">Drug Name</label>
 	                <input class="form-control" id="name" name="name">
