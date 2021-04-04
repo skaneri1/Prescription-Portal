@@ -1,4 +1,4 @@
-<p class="font-weight-light font-italic" style="padding: 20px">
+<p class="font-weight-light font-italic" style="padding: 40px">
 Front-end host: <?php echo gethostname(); ?><br>
 Database host: <?php echo $host; ?>
 
