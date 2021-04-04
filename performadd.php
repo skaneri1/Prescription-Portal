@@ -28,8 +28,6 @@
 
         header('Refresh:5; url=index.php');
         echo 'Congratulations! The Prescription has been saved...This page will redirect to patients in 5 seconds';
-
-        header ("location: /index.php");
         }
 
         catch(PDOException $error) {
