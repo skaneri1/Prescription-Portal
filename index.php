@@ -22,11 +22,11 @@
 
 		<div class="container">
 		<?php require "./templates/nav.php" ?>
-		<h2>Patients Registered with Portal</h2>
+		<h2 style="padding-bottom: 30px">Patients Registered with Portal</h2>
 		<div></div>
 		<h4>Shlok Kaneria</h4>
 		<!-- Trigger the modal with a button -->
-		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Prescription</button>
+		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="padding-bottom: 30px">Add Prescription</button>
 
 		<!-- Modal -->
 		<div class="modal fade" id="myModal" role="dialog">
@@ -39,7 +39,7 @@
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 				</div>
 				<div class="modal-body">
-	        <form method="post" style="padding: 20px" action="./performadd.php">
+	        <form method="post" style="padding: 10px" action="./performadd.php">
 	            <div class="form-group">
 	                <label for="name" class="text-primary">Drug Name</label>
 	                <input class="form-control" id="name" name="name">
@@ -66,10 +66,9 @@
 		</div>
 		</div>
 
-		<div></div>
 		<h4>Dhruv Parthasarathy</h4>
 		<!-- Trigger the modal with a button -->
-		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Prescription</button>
+		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="padding-bottom: 30px">Add Prescription</button>
 
 		<!-- Modal -->
 		<div class="modal fade" id="myModal1" role="dialog">
@@ -82,7 +81,7 @@
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 				</div>
 				<div class="modal-body">
-	        <form method="post" style="padding: 20px" action="./performadd.php">
+	        <form method="post" style="padding: 10px" action="./performadd.php">
 	            <div class="form-group">
 	                <label for="name" class="text-primary">Drug Name</label>
 	                <input class="form-control" id="name" name="name">
@@ -109,10 +108,9 @@
 		</div>
 		</div>
 
-		<div></div>
 		<h4>Hari Dhanushkodi</h4>
 		<!-- Trigger the modal with a button -->
-		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Prescription</button>
+		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="padding-bottom: 30px">Add Prescription</button>
 
 		<!-- Modal -->
 		<div class="modal fade" id="myModal2" role="dialog">
@@ -125,7 +123,7 @@
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 				</div>
 				<div class="modal-body">
-	        <form method="post" style="padding: 20px" action="./performadd.php">
+	        <form method="post" style="padding: 10px" action="./performadd.php">
 	            <div class="form-group">
 	                <label for="name" class="text-primary">Drug Name</label>
 	                <input class="form-control" id="name" name="name">
