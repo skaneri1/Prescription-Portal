@@ -39,7 +39,7 @@
 			<h2 style="padding-bottom: 30px">Shlok's Prescriptions</h2>
       <?php
          if (!$result && $statement->rowCount() == 0) { ?>
-          <h4> No prescriptions to display. Add one from the patients.</h4>
+          <h5> No prescriptions to display for Shlok. Add one from the patients.</h5>
          <?php }
          else
          {
@@ -52,7 +52,7 @@
 			<h2 style="padding-bottom: 30px; padding-top: 30px">Dhruv's Prescriptions</h2>
       <?php
          if (!$resulta && $statementa->rowCount() == 0) { ?>
-          <h4> No prescriptions to display. Add one from the patients.</h4>
+          <h5> No prescriptions to display for Dhruv. Add one from the patients.</h5>
          <?php }
          else
          {
@@ -64,7 +64,7 @@
 			<h2 style="padding-bottom: 30px; padding-top: 30px">Hari's Prescriptions</h2>
       <?php
          if (!$resultb && $statementb->rowCount() == 0) { ?>
-          <h4> No prescriptions to display. Add one from the patients.</h4>
+          <h5> No prescriptions to display for Hari. Add one from the patients.</h5>
          <?php }
          else
          {
